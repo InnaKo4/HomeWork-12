@@ -1,0 +1,78 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "/Users/hellonewuser/PycharmProjects/HomeWork-12/venv/lib/python3.10/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/hellonewuser/PycharmProjects/HomeWork-12/venv/lib/python3.10/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/hellonewuser/PycharmProjects/HomeWork-12/venv/lib/python3.10/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/hellonewuser/PycharmProjects/HomeWork-12/venv/lib/python3.10/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/hellonewuser/PycharmProjects/HomeWork-12/loader/views.py", line 16, in add_post_page
+    logging.info('Загруженный файл не является изображением')
+NameError: name 'logging' is not defined
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:15:29] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:15:39] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:15:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:15:39] "GET /uploads/images/Picca.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:15:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:15:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:15:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "/Users/hellonewuser/PycharmProjects/HomeWork-12/venv/lib/python3.10/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/hellonewuser/PycharmProjects/HomeWork-12/venv/lib/python3.10/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/hellonewuser/PycharmProjects/HomeWork-12/venv/lib/python3.10/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/hellonewuser/PycharmProjects/HomeWork-12/venv/lib/python3.10/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/hellonewuser/PycharmProjects/HomeWork-12/main/views.py", line 12, in search_page
+    logging.info("Поиск данных")
+NameError: name 'logging' is not defined
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:15:48] "[35m[1mGET /search?s=кот HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Поиск данных
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:17:06] "GET /search?s=кот HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:17:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:17:12] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:17:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Загруженный файл не является изображением
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:17:24] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:18:26] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:18:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:18:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:18:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:18:45] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:18:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:18:46] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:19:06] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:19:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:19:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:19:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Поиск данных
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:19:39] "GET /search?s=ты HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:19:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:19:45] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:19:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:19:50] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:24:38] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:24:38] "GET /uploads/images/nature.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:24:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:24:41] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:24:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:24:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:24:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Aug/2022 01:24:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
